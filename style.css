@@ -1,11 +1,18 @@
+*{
+    margin: 0;
+    padding: 0; 
+}
+
 body{
     background-color: rgb(12, 12, 12);
     font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-
+    
 }
+
 header{
     background-color: rgb(255, 255, 255);
     color: white;
+    margin-top: 0px;
 }
 
 .nav-bar{
@@ -19,6 +26,7 @@ header{
     border-radius: 50px;
     margin-left: 15%;
     margin-top: 0px;
+    margin-bottom: 20px;
     border: 1px solid rgb(155, 255, 4);
     border-bottom: 2px solid rgb(214, 255, 152);
 }
@@ -27,7 +35,17 @@ header{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 100%;
+    height: 50px;
+    width: 100%;
+    margin-top: 10px;  
+    padding: 10px;
+}
+
+.hero-edit{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50%;
     width: 100%;
     margin-top: 10px;
     
@@ -43,7 +61,7 @@ header{
     padding: 50px;
     border-bottom-left-radius: 100px;
     border-bottom-right-radius: 100px;
-    ;
+    
 }
 
 .hero-h1{
@@ -54,12 +72,14 @@ header{
     width: 60%;
     display: flex;
     justify-content: center;
+    font-family: monospace;
 }
 .hero-image{
     width: 100%;
     height: 200px;
     margin-top: 50px;
     border-radius: 20px;
+    margin-right: 40px;
 }
 .aside{
     margin-left: 0px;
@@ -67,7 +87,28 @@ header{
     height: 100px;
     width: 70%;
     margin-bottom: 20px;
-    margin-top: 150px;
+    margin-top: 50px;
+    padding: 0px;
+    font-size: large;
+    font-family: monospace;
+}
+.button-h{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    height: 40px;
+    width: 220px;
+    border: 1px solid yellowgreen;
+    border-radius: 25px;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 40px;
+    font-weight: bold;
+}
+.button-h:hover{
+    background-color: yellowgreen;
+    color: rgb(255, 255, 255);
+    border: 2.5px solid yellow;
+    cursor: pointer;
 }
 
 .cool-panel-layout{
@@ -85,6 +126,11 @@ header{
     justify-content: space-evenly;
     text-align: center;
     margin-left: 100px;
+}
+.cool-panel-layout:hover{
+    background: linear-gradient(130deg,yellowgreen, black,black,black,black,yellowgreen);
+    animation: shimmer 2s infinite;
+    border: 1.5px solid yellowgreen;
 }
 
 .section-3{
@@ -114,7 +160,7 @@ header{
     color: rgb(255, 255, 255);
     background:linear-gradient(180deg, rgba(0, 0, 0, 0.85), rgba(6,7,8,0.9));
     color:white;
-    height: 15vh;
+    height: 10vh;
     width: 90%;
     margin-top: 10px;
     padding: 40px;
@@ -187,6 +233,7 @@ header{
     border: 1px solid rgb(155, 255, 4);
 }
 
+
 .section-8{
     background-color: rgb(18, 19, 17);
     height: 30vh;
@@ -196,18 +243,6 @@ header{
     border-radius: 40px;
     color: rgba(251, 250, 250, 0.9);
     text-align: center;
-}
-
-.footer-section{
-    background-color: rgb(155, 255, 4);
-    height: 50vh;
-    width: 95%;
-    margin-top: 20px;
-    padding: 50px;
-    color: rgb(0, 0, 0);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
 
 }
 
@@ -226,4 +261,29 @@ header{
     border: 1px solid rgb(155, 255, 4);
     width: 25%;
 
+}
+
+.footer-section{
+    background-color: rgb(155, 255, 4);
+    height: 65vh;
+    width: 95%;
+    margin-top: 20px;
+    padding: 50px;
+    color: rgb(0, 0, 0);
+    align-items: center;
+}
+.heading-text-name{
+    text-align: left;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.footer-list{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.footer-bottom{
+    text-align: center;
+    margin-top: 20px;
 }
