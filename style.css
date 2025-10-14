@@ -31,6 +31,31 @@ header{
     border-bottom: 2px solid rgb(214, 255, 152);
 }
 
+.nav-icon{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.nav-bar:hover{
+    color: aquamarine;
+    animation: shimmer 2s infinite;
+    border: 2.5px solid yellowgreen;
+    cursor: pointer;
+}
+@media (max-width: 700px) {
+    .nav-bar {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 0;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .nav-icon {
+        margin: 5px 0;
+    }
+}
+
 .hero-content{
     display: flex;
     justify-content: space-around;
@@ -53,7 +78,7 @@ header{
 
 .hero-section{
     height: 75vh;
-    width: 90%;
+    width: 95%;
     align-items: center;
     color: rgb(0, 0, 0);
     background-color: rgb(255, 255, 255);
@@ -73,13 +98,20 @@ header{
     display: flex;
     justify-content: center;
     font-family: monospace;
+    margin-top: 5px;
+}
+.hero-p{
+    text-align: center;
+    margin-right: 20px;
+    font-size: smaller;
 }
 .hero-image{
-    width: 100%;
-    height: 200px;
-    margin-top: 50px;
-    border-radius: 20px;
-    margin-right: 40px;
+    width: 400px;
+    height: 200px; 
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    border-radius: 50px;
 }
 .aside{
     margin-left: 0px;
@@ -111,6 +143,41 @@ header{
     cursor: pointer;
 }
 
+@media (max-width: 700px) {
+    .hero-section {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        height: 200vh;
+    }
+    .hero-content {
+        display: table-column;
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-edit, .aside {
+        flex-direction: column;
+        margin: 0;
+    }
+    .hero-image{
+        width: 40px;
+        height: 50px;
+        margin: 5px 5px 5px 5px;
+        display: flex;
+        justify-content: center;
+        
+    }
+    .hero-h1 {
+        font-size: 0.5rem;
+        text-align: center;
+        
+    }
+    .button-h {
+        width: 90%;
+        margin: 10px 0 0 0;
+    }
+}
+
 .cool-panel-layout{
     height: 5vh;
     width: 70%;
@@ -136,7 +203,7 @@ header{
 .section-3{
     background-color: rgb(255, 255, 255);
     height: 90vh;
-    width: 90%;
+    width: 95%;
     margin-top: 50px;
     padding: 50px;
     border-radius: 100px;
@@ -146,9 +213,10 @@ header{
 .section-4{
     background-color: rgb(0, 0, 0);
     height: 75vh;
-    width: 90%;
-    margin-top: 50px;
+    width: 95%;
+    margin-top: 30px;
     padding: 50px;
+    padding-left: 70px;
     border-radius: 100px;
     color: rgba(255, 255, 255, 0.9);
     display: flex;
@@ -161,15 +229,21 @@ header{
     background:linear-gradient(180deg, rgba(0, 0, 0, 0.85), rgba(6,7,8,0.9));
     color:white;
     height: 10vh;
-    width: 90%;
+    width: 95%;
     margin-top: 10px;
     padding: 40px;
-    border-radius: 100px;
+    border-radius: 50px;
     display: flex;
     justify-content: space-around;
     font-weight: bold;
+    margin-bottom: 10px;
 }
+.section-5:hover{
+    background: linear-gradient(130deg,yellowgreen, black,black,black,black,yellowgreen);
+    animation: shimmer 2s infinite;
+    border: 1.5px solid yellowgreen;
 
+}    
 .section-6{
     align-items: center;
     height: 90vh;
@@ -178,16 +252,20 @@ header{
     border: 1px solid rgb(155, 255, 4);
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
+    padding: 20px;
+
 }
 .section-6-box{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 50%;
+    height: 40%;
     width: 100%;
     margin-top: 10px;
-    
+  
 }
+
+
 .box{
     height: 140px;
     width: 300px;
@@ -195,15 +273,16 @@ header{
     border-radius: 20px;
     color: rgb(0, 0, 0);
     display: flex;
-    
+    padding: 10px;
+    border: 1px solid black;
 }
 
 
 
 .section-7{
     background-color: rgb(0, 0, 0);
-    height: 90vh;
-    width: 90%;
+    height: 100vh;
+    width: 95%;
     margin-top: 10px;
     padding: 50px;
     border-radius: 100px;
@@ -211,7 +290,7 @@ header{
 }
 .card-container{
     align-items: center;
-    height: 50%;
+    height: 60%;
     width: 50%;
     margin-top: 10px;
 
@@ -219,7 +298,7 @@ header{
 
 .card{
     background-color: rgb(32, 31, 31);
-    height: 150px;
+    height: 120px;
     width: 450px;
     border-radius: 20px;
     color: white;
@@ -237,7 +316,7 @@ header{
 .section-8{
     background-color: rgb(18, 19, 17);
     height: 30vh;
-    width: 90%;
+    width: 95%;
     margin-top: 50px;
     padding: 50px;
     border-radius: 40px;
