@@ -154,15 +154,17 @@ header{
         display: table-column;
         flex-direction: column;
         text-align: center;
+
     }
     .hero-edit, .aside {
         flex-direction: column;
         margin: 0;
+        margin: 5px;
     }
     .hero-image{
-        width: 40px;
-        height: 50px;
-        margin: 5px 5px 5px 5px;
+        width: auto;
+        height: 90px;
+        margin: 5px;
         display: flex;
         justify-content: center;
         
@@ -199,6 +201,29 @@ header{
     animation: shimmer 2s infinite;
     border: 1.5px solid yellowgreen;
 }
+@media (max-width: 600px) {
+    .cool-panel-layout {
+        display: flex;
+        justify-content: space-evenly;
+        height: auto;
+        padding: 20px;
+        width: 90%;
+        margin: 10px auto;
+        border-radius: 25px;
+        border: 2px solid rgb(155, 255, 4);
+    }
+    .cool-panel-layout:hover{
+        background: linear-gradient(130deg,yellowgreen,rgb(72, 103, 10), rgb(72, 103, 10),black,black,black,rgb(72, 103, 10),rgb(72, 103, 10) yellowgreen);
+        animation: shimmer 2s infinite;
+        border: 1.5px solid yellowgreen;
+    }
+    .cool-text {
+        margin: 5px 0;
+        border: 1px solid rgb(193, 231, 122);
+        border-radius: 5px;
+        padding: 5px;
+    }
+}
 
 .section-3{
     background-color: rgb(255, 255, 255);
@@ -208,6 +233,25 @@ header{
     padding: 50px;
     border-radius: 100px;
     color: rgba(0, 0, 0, 0.9);
+}
+@media (max-width: 700px) {
+    .section-3 {
+        height: auto;
+        padding: 20px;
+        width: 90%;
+        margin: 10px auto;
+        border-radius: 25px;
+        margin-left: 5px;
+    }
+    .section-image{
+        width: 35%;
+        height: auto;
+        margin: 10px 0;
+        margin-left: 5px;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+    } 
 }
 
 .section-4{
@@ -221,6 +265,26 @@ header{
     color: rgba(255, 255, 255, 0.9);
     display: flex;
     justify-content: space-evenly;
+}
+@media (max-width: 700px) {
+    .section-4 {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        width: 90%;
+        margin: 10px auto;
+        border-radius: 25px;
+        text-align: left;
+    }
+    .section-4-img{
+        width: 50%;
+        height: auto;
+        margin: 10px 0;
+        margin-left: 5px;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+    }
 }
 
 .section-5{
@@ -365,4 +429,13 @@ header{
 .footer-bottom{
     text-align: center;
     margin-top: 20px;
+}
+
+
+
+/*about-page*/
+.about-page{
+    background-color: rgb(255, 255, 255);
+    font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    color: rgb(0, 0, 0);
 }
