@@ -1,6 +1,6 @@
 This repository contains:
--an web agency website layout 
--build using HTML5 and basic CSS
+>an web agency website layout 
+>build using HTML5 and basic CSS
 this project is to practice basic tags that are requre to give structure to an web page and how to make it innteractive using simple CSS
 > here are some images of the final outcome:-
 
