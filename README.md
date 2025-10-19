@@ -11,4 +11,5 @@ this project is to practice basic tags that are requre to give structure to an w
 <img width="1920" height="1080" alt="Screenshot 2025-10-15 194318" src="https://github.com/user-attachments/assets/c6f5e065-685e-4304-b334-603fd4af921f" />
 <img width="1920" hei<img width="1920" height="1080" alt="Screenshot 2025-10-15 194342" src="https://github.com/user-attachments/assets/befc44ab-b243-4557-b3e3-30105747029c" />
 ght="1080" alt="Screenshot 2025-10-15 194329" src="https://github.com/user-attachments/assets/b25cec15-e10d-4dce-864d-7579e8acaa62" />
+<img width="1000" height="10860" alt="_C__Users_Shivalika_proprojects_task-2_index html" src="https://github.com/user-attachments/assets/c27ad807-aa2e-4a29-86be-53366e9b9353" />
 
